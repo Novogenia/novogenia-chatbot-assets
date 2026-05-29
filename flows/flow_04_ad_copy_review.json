@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "flow04-condition",
+      "label": "Flow Condition",
+      "type": "FlowConditionNode",
+      "data": {
+        "conditionText": "Activate this flow when the partner submits a piece of marketing copy, ad text, social-media post, landing-page text, email, or testimonial for review BEFORE publishing. Triggers: 'prüfe meinen Werbetext', 'check diesen Post', 'darf ich das veröffentlichen', 'ist das compliant', 'hier mein Insta-Post', 'mein Newsletter-Text', 'prüf mal', 'review my copy', oder wenn der Partner mehr als 2 zusammenhängende Sätze als Marketing-Sample postet und fragt ob das OK ist."
+      },
+      "position": { "x": 100, "y": 260 }
+    },
+    {
+      "id": "flow04-knowledge-review-criteria",
+      "label": "Knowledge",
+      "type": "KnowledgeNode",
+      "data": {
+        "text": "FLOW IDENTITY\nYou are currently inside Flow 04 — Ad Copy Review.\nThis flow activates when the partner asks you to review a specific piece of marketing text. Follow ALL instructions in this flow.\n\nREVIEW-KRITERIEN (in dieser Reihenfolge prüfen)\n\n1. VERBOTENE HEILVERSPRECHEN\nSuche nach: 'heilt', 'behandelt', 'kuriert', 'therapiert', 'schützt vor [Krankheit]', 'verhindert [Krankheit]', 'beseitigt [Krankheit]', 'wirkt gegen [Krankheit]'. Bei Treffer → RED FLAG.\n\n2. WISSENSCHAFTS-CLAIMS\n- 'wissenschaftlich erwiesen' für Lifestyle-Produkte → RED FLAG, durch 'wissenschaftlich unterstützt' ersetzen\n- 'Studien zeigen...' OHNE konkrete Quelle → YELLOW FLAG\n- 'klinisch getestet' für Genetik-Tests → RED FLAG (das sind keine klinischen Tests)\n\n3. KRANKHEITS-NAMEN\n- Diabetes, Krebs, Demenz, Alzheimer, Herzinfarkt usw. KOMBINIERT mit positiver Aussage → RED FLAG (HWG / Heilmittelwerbegesetz)\n- Erlaubt: 'unterstützt eine gesunde Lebensweise', 'fördert dein Wohlbefinden'\n\n4. VORHER-NACHHER\n- Bilder ohne Disclaimer 'Individuelle Ergebnisse können abweichen' → YELLOW FLAG\n- Behauptungen wie 'Verlierst X kg in Y Wochen' ohne Studien-Quelle → RED FLAG\n\n5. KUNDEN-TESTIMONIALS\n- Wenn vorhanden: prüfe ob 'authentisch' formuliert ist, nicht zu glatt\n- Fehlender Hinweis auf Einzelfall → YELLOW FLAG\n\n6. SUPPLEMENTE-DISCLAIMER\n- Wenn Supplement genannt: 'Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung' MUSS irgendwo stehen → fehlt? YELLOW FLAG\n\n7. DNA-DISCLAIMER\n- Wenn DNA-Analyse genannt: 'Die genetische Analyse ist kein Ersatz für eine ärztliche Diagnose' → fehlt? YELLOW FLAG\n\n8. MARKEN-KONFORMITÄT\n- Wird 'NovoDaily' korrekt geschrieben?\n- Werden Produktnamen wie im Profile genutzt (z.B. 'NovoDaily Lifestyle+' nicht 'das Lifestyle Paket')?\n\n9. WETTBEWERBS-VERGLEICHE\n- Disparagierend ('die sind schlechter') → RED FLAG\n- Sachlich-objektiv ('wir testen X Marker, der Wettbewerber Y') → OK\n\n10. TONE\n- Druck-Sprache ('JETZT bestellen oder DU bereust es') → YELLOW FLAG, Reframe als Einladung\n\nAMPEL-SYSTEM\n- RED FLAG = muss vor Veröffentlichung geändert werden, sonst Abmahnungsrisiko\n- YELLOW FLAG = sollte angepasst werden, Risiko mittel\n- GREEN = passt"
+      },
+      "position": { "x": 500, "y": 260 }
+    },
+    {
+      "id": "flow04-prompt-deliver",
+      "label": "Prompt Instruction",
+      "type": "PromptInstructionNode",
+      "data": {
+        "text": "STEP 1 — RECEIVE THE TEXT\nWenn der Partner noch keinen Text geschickt hat aber den Flow getriggert hat: 'Schick mir den Text — Insta-Caption, Email, Landing-Page, was auch immer du prüfen willst.'\n\nWenn der Text da ist → Weiter zu Step 2.\n\nSTEP 2 — DURCHGEHEN MIT AMPEL-SYSTEM\nGehe die 10 Kriterien aus dem Knowledge Node in Reihenfolge durch. Für jedes Kriterium:\n- 🔴 Red Flag: zitiere die problematische Stelle wörtlich + sag warum + biete eine Reformulierung an\n- 🟡 Yellow Flag: zitiere die Stelle + sag was fehlt / verbessert werden sollte\n- 🟢 OK: nicht erwähnen, weiter zum nächsten Kriterium\n\nFORMAT der Antwort:\n\n**Ampel-Check** (eine Zeile, z.B. '2 Red Flags, 1 Yellow, sonst grün')\n\n**🔴 Red Flag 1** \n> [zitierte Stelle wörtlich]\nWarum: [kurze Erklärung]\nVorschlag: '[konkrete Reformulierung]'\n\n**🔴 Red Flag 2** \n... (analog)\n\n**🟡 Yellow Flag 1** \n... (analog)\n\nSTEP 3 — VEROVERSION\nNach den Flags liefere eine BEREINIGTE VERSION des ganzen Textes — alle Red+Yellow Flags umformuliert. So kann der Partner direkt copy-pasten.\n\nFORMAT:\n\n**Bereinigte Version**\n\n[ganzer überarbeiteter Text]\n\nSTEP 4 — DISCLAIMER + ESCALATION\nAm Ende:\n- 'Das ist meine Einschätzung basierend auf den NovoDaily Werberichtlinien. Bei größeren Kampagnen / Anzeigen mit hohem Budget schick die Final-Version trotzdem an {{COMPANY_NAME}} zur Freigabe — die haben den Letzt-Stand der rechtlichen Lage.'\n\nSTEP 5 — DOWNLOADABLE RESOURCES\nWenn relevant verweise auf:\n- [Rechtliche Leitlinien für Werbung (PDF, DE)](URL aus KB_DOWNLOAD_LINKS)\n- [Richtlinien Vertriebsaktivitäten (PDF, DE)](URL)\n\nFORBIDDEN\n- Niemals 'das ist 100% legal' sagen — immer relative Risikobewertung\n- Niemals einen Text ohne Begründung als 'OK' durchwinken\n- Bei Spezial-Themen (Heilversprechen rund um Schwangerschaft, Kinder, ernsthafte Krankheiten) IMMER eskalieren statt selbst freizugeben\n\nFORMATTING\n- Ampel-Emoji 🔴🟡🟢 verwenden (Ausnahme zur 'keine Emojis in Compliance' Regel — hier struktureller Zweck)\n- Zitate im Markdown-Blockquote (>)\n- Bereinigte Version klar abgegrenzt mit H3-Header"
+      },
+      "position": { "x": 900, "y": 260 }
+    }
+  ],
+  "connections": [
+    { "source": "flow04-condition", "sourceOutput": "out", "target": "flow04-knowledge-review-criteria", "targetInput": "in" },
+    { "source": "flow04-knowledge-review-criteria", "sourceOutput": "out", "target": "flow04-prompt-deliver", "targetInput": "in" }
+  ]
+}

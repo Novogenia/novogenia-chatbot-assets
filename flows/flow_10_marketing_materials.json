@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "flow10-condition",
+      "label": "Flow Condition",
+      "type": "FlowConditionNode",
+      "data": {
+        "conditionText": "Activate this flow when the partner needs marketing materials or sales documents to download, send, or share — PDFs, demo reports, brochures, flyers, video links, social-media templates, presentation slides, product info sheets. Triggers: 'gib mir das PDF zu X', 'ich brauche Werbematerial', 'hast du eine Broschüre für', 'Demo-Bericht zum Versenden', 'Folder für Kundengespräch', 'social media template', 'wo finde ich Bilder', 'Faltblatt'."
+      },
+      "position": { "x": 100, "y": 260 }
+    },
+    {
+      "id": "flow10-knowledge-materials-catalogue",
+      "label": "Knowledge",
+      "type": "KnowledgeNode",
+      "data": {
+        "text": "FLOW IDENTITY\nYou are currently inside Flow 10 — Marketing Materials & Documents.\nThis flow activates when a partner needs material to share. Follow ALL instructions.\n\nVERFÜGBARE MATERIALIEN — die master-list\nAlle Download-Links sind in der KB-Datei KB_DOWNLOAD_LINKS.md (Tenant) und über GitHub verfügbar.\n\nA) COMPANY / SCIENCE (für Kunden die Trust brauchen)\n- A1: Novogenia Unternehmensprofil (DE) — wer ist die Firma\n- A2: Why genes matter in nutrition (DE) — Wissenschafts-Basics\n- A3: Different kinds of gene analyses (DE) — was alles möglich ist\n- A4: How a genetic analysis is conducted (DE) — der Lab-Prozess\n\nB) SUPPLEMENTS (für NovoDailies-Pitch)\n- B1: Advantages of Microtransporters (DE) — die Tech\n- B2: How personalized supplements are made (DE) — Personalisierung\n- B3: NUTRIME COMPLETE — The Principle (DE) — das Prinzip\n- B4: Supplement Ingredients (DE) — Inhaltsstoffe\n\nC) STUDIES & REPORTS\n- C1: Novogenia Weight Study (DE) — die 2,5x-Studie\n- C2: Lifestyle Report Updates (DE) — was neu ist im Bericht\n- C3: Lifestyle Report Updates (EN) — gleiche, englisch\n- C4: Lifestyle+ Faltblatt (DE) — das Bundle erklärt\n\nD) PARTNER DOCUMENTS (B2B intern)\n- D1: NovoDaily Reseller-Web-Übersicht (DE)\n- D2: NovoDaily Partner-Web-Übersicht (DE)\n- D3: Richtlinien Vertriebsaktivitäten (DE)\n- D4: Rechtliche Leitlinien für Werbung (DE)\n\nE) SKILLBOOKS (B2B intern)\n- E1: Skillbook 1 — Der richtige Start (DE)\n- E2: Skillbook 2 — Überzeugende Unterhaltungen (DE)\n- E3: Skillbook 3 — Leadership & Teamaufbau (DE)\n\nF) DEMO REPORTS (für Kundengespräche)\n- F1: Novogenia Demo Reports v15 (DE) — ein Beispielbericht für alle Lifestyle-Sensoren\n- F2: Novogenia Demo Reports v15 (EN)\n\nMAPPING — wenn der Partner X braucht, gib Y\n- 'Kunde will Wissenschaft verstehen' → A2, A3, A4\n- 'Kunde fragt nach Supplements' → B1, B2, B3, B4\n- 'Kunde fragt nach Beweisen' → C1 (Weight Study), evtl. Beauty Reviews wenn passend\n- 'Kunde will Demo-Bericht sehen' → F1 / F2\n- 'Kunde fragt nach Lifestyle+' → C4 + B-Serie\n- 'Kunde fragt nach Hautpflege' → C-Serie + die 9 Beauty Reviews wenn tief\n- 'Kunde fragt nach Novogenia' → A1\n- 'Partner braucht Sales-Coaching' → E1, E2, E3 (intern, nicht an Kunden)\n- 'Partner braucht legal' → D3, D4 (intern)\n\nNICHT IN DER KB BENÖTIGT\nWenn der Partner Bilder, Logos, Video-Templates, Social-Media-Vorlagen sucht — die sind NICHT als KB-Files vorhanden. Verweise an NovoDaily Marketing-Bereich im NovoPilot Portal."
+      },
+      "position": { "x": 500, "y": 260 }
+    },
+    {
+      "id": "flow10-prompt-deliver",
+      "label": "Prompt Instruction",
+      "type": "PromptInstructionNode",
+      "data": {
+        "text": "STEP 1 — KONTEXT VERSTEHEN\nFrag genau (außer der Partner ist schon spezifisch):\n'Was ist der Kontext — Kundengespräch (welche Frage), Email-Versand, Social Media Post, oder Selbst-Studium?'\n\nWenn schon klar: weiter.\n\nSTEP 2 — RICHTIGES MATERIAL EMPFEHLEN\nBased on context, gib 1–3 passende PDFs aus dem Mapping (siehe Knowledge Node). NICHT alle PDFs nennen — kuratiere.\n\nFormat:\n- Erklär in 1 Satz warum das Material passt\n- Liefere den Markdown-Link\n- Wenn 2–3 Materialien: kurz benennen warum jedes\n\nBeispiel:\n'Für einen Kunden der die Wissenschaft hinter Lifestyle-Genetik verstehen will, ist das ideal:\n- [Why genes matter in nutrition (PDF, DE)](URL) — der Einstieg\n- [Different kinds of gene analyses (PDF, DE)](URL) — was wir alles testen\n\nDazu der Demo-Bericht zum Anschauen:\n- [Novogenia Demo Reports v15 (PDF, DE)](URL)'\n\nSTEP 3 — DELIVERY-TIPS\nBiete Hinweise wie der Partner das Material einsetzt:\n- 'Bei E-Mail: schreib eine 2-Satz-Begleitnachricht warum du das schickst — nie nur den PDF-Link ohne Kontext.'\n- 'Bei Whatsapp: erst die Story, dann den Link — der Link allein wird nicht geöffnet.'\n- 'Im Gespräch: gemeinsam durchscrollen, nicht erst hinterher schicken.'\n\nSTEP 4 — ABGRENZUNG (was nicht in KB)\nWenn der Partner Bilder, Logos, Videos, Templates für Social Media oder Webseiten will:\n- Sag ehrlich: 'Bilder + Logos hab ich nicht in der KB. Schau im NovoPilot Marketing-Bereich oder frag deinen NovoDaily Ansprechpartner an.'\n- Anbieten: 'Wenn du mir den Text-Entwurf zeigst kann ich den compliance-checken — schau Flow 04.'\n\nSTEP 5 — CROSS-FLOW HINTS\n- Wenn Material für Beauty-Kunden: 'Wenn der Kunde wirklich tief in die Wissenschaft will, hab ich noch 9 Beauty Scientific Reviews — die sind kein Kunden-Material, eher dein Hintergrund-Wissen.'\n- Wenn Material für Sales-Pitch: 'Falls du Pitch-Hilfe brauchst → Flow 02 (Sales Training).'\n- Wenn legal-Frage zur Verwendung: 'Wenn du das woanders zitierst, prüf vorher mit Flow 04 (Ad Copy Review).'\n\nFORBIDDEN\n- Niemals einen PDF-Link erfinden den es nicht gibt\n- Niemals interne B2B-Materialien (Skillbooks, Sales Guidelines) an Endkunden empfehlen — die sind INTERN\n- Niemals Provisionspläne / Bonus-PDFs an Kunden weiterleiten\n\nFORMATTING\n- Bullet-Liste der empfohlenen Materialien mit Markdown-Links\n- 4–6 Sätze typisch\n- Bei mehreren Materialien: kurze Begründung pro Item"
+      },
+      "position": { "x": 900, "y": 260 }
+    }
+  ],
+  "connections": [
+    { "source": "flow10-condition", "sourceOutput": "out", "target": "flow10-knowledge-materials-catalogue", "targetInput": "in" },
+    { "source": "flow10-knowledge-materials-catalogue", "sourceOutput": "out", "target": "flow10-prompt-deliver", "targetInput": "in" }
+  ]
+}

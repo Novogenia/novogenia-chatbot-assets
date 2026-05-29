@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "flow06-condition",
+      "label": "Flow Condition",
+      "type": "FlowConditionNode",
+      "data": {
+        "conditionText": "Activate this flow when the partner asks about getting referrals from customers, growing their downline through partner referrals, asking 'wie kriege ich Empfehlungen', 'wie wachse ich', 'Mund-zu-Mund', 'referral', 'wer kann ich noch empfehlen', 'wie bringe ich Kunden dazu mich weiterzuempfehlen', or talks about recruiting new partners into their team. Also fires when partner asks about referral incentives or referral conversation scripts."
+      },
+      "position": { "x": 100, "y": 260 }
+    },
+    {
+      "id": "flow06-knowledge-referral-system",
+      "label": "Knowledge",
+      "type": "KnowledgeNode",
+      "data": {
+        "text": "FLOW IDENTITY\nYou are currently inside Flow 06 — Reseller Referrals.\nThis flow activates when a partner asks about referrals (customer-to-customer OR partner-to-partner). Follow ALL instructions.\n\nZWEI ARTEN VON REFERRALS — UNTERSCHEIDEN\n\nA) KUNDEN-REFERRALS (Kunde empfiehlt Kunde)\nDer aktuelle Kunde bringt neue Kunden zu dir. Das ist die Hauptquelle für nachhaltige Reseller — billiger und konvertiert besser als kalte Kontakte.\n\nWANN FRAGEN — die 3 Goldenen Momente\n1. NACH DEM ERSTEN BERICHT — Wenn der Kunde gerade seine Lifestyle-Analyse durchgegangen ist und Aha-Momente hatte\n2. NACH 30 TAGEN AUF NOVODAILIES — Wenn der Kunde die ersten Effekte spürt (Energie, Schlaf, Verdauung)\n3. NACH 6 MONATEN ABO — Wenn der Kunde sichtbar Fortschritt zeigt (Gewicht, Haut, Performance)\n\nWIE FRAGEN — das Script aus Skillbook 2\n- NICHT: 'Kennst du jemanden der das auch braucht?' (vage, killt das Gespräch)\n- JA: 'Du hast diese 3 Aha-Momente gerade gehabt. Wer in deinem Umfeld hätte vermutlich die GLEICHEN Aha-Momente?'\n- Spezifisch werden: 'Denk an deine 3 nächsten Freunde — wer von denen interessiert sich am meisten für Ernährung / Sport / Gesundheit?'\n- Konkrete Namen abrufen lassen, nicht abstrakt\n\nDER WARM-INTRO ABLAUF\n1. Kunde nennt 2–3 Namen\n2. Frag: 'Wie ist deine Beziehung zu denen — eng oder eher Bekanntschaft?'\n3. Für ENG: 'Würdest du mich denen kurz vorstellen? Ich kann auf dich verweisen — Druck null.'\n4. Für BEKANNTSCHAFT: 'Würde es OK sein wenn ich mich auf dich beziehe wenn ich denen schreibe?'\n5. Setup: gemeinsame Nachricht (WhatsApp-Sprachnachricht), Webcall zu dritt, oder klassisches Forwarding\n\nB) PARTNER-REFERRALS (Partner empfiehlt neuen Partner)\nDu rekrutierst neue Reseller in dein Team. Das ist Leadership-Track-Arbeit (Skillbook 3).\n\nDIE 3 KANDIDATEN-PROFILE\n1. ZUFRIEDENE KUNDEN — die einen Bezug zu NovoDaily haben und Interesse an Selbstständigkeit zeigen\n2. AUS DEINEM NETZWERK — Personal Trainer, Ernährungsberater, Coaches, Health-Practitioners\n3. AUS DEM KARRIERE-WANDEL — Menschen die gerade einen Job wechseln oder ein Side-Business suchen\n\nDER PARTNER-PITCH IST ANDERS ALS DER PRODUKT-PITCH\nBeim Produkt verkaufst du Gesundheit. Beim Partner-Pitch verkaufst du:\n- Flexibilität (Zeit, Ort, Familie)\n- Recurring Revenue (Subscription-Provision)\n- Persönliche Entwicklung (Skillbooks, Coaching, NOVO ACADEMY)\n- Sinn (du hilfst Menschen ihre Gesundheit zu verstehen)\n\nINCENTIVES — DIE OFFIZIELLE POLICY\n- Niemals exakte Bonus-Beträge versprechen ohne Rückfrage bei {{COMPANY_NAME}}\n- Allgemein: Partner-Referrals gibt es als Boni, Details im Compensation-Plan\n- Verweise an: NovoDaily Recruiter / Sponsor-Up-Line"
+      },
+      "position": { "x": 500, "y": 260 }
+    },
+    {
+      "id": "flow06-prompt-deliver",
+      "label": "Prompt Instruction",
+      "type": "PromptInstructionNode",
+      "data": {
+        "text": "STEP 1 — UNTERSCHEIDE A vs B\nFrag wenn nicht klar: 'Geht es um Kunden die andere Kunden empfehlen — oder darum dass du neue Partner ins Team holst?'\n\nWenn aus der Eingangsmessage klar erkennbar → Step 2.\n\nSTEP 2 — DELIVER\n\nIntent A (Kunden-Referrals):\n- Welcher der 3 goldenen Momente passt zu diesem Kunden? (frag wenn unklar)\n- Liefere das passende Script (siehe Knowledge Node, Kapitel 'WIE FRAGEN')\n- Liefere den Warm-Intro-Ablauf in 5 Schritten\n- Anbieten: 'Soll ich das durchspielen — du bist der Kunde, ich mach den Reseller?'\n\nFormat:\n- 1 Absatz: Welcher Moment\n- Nummerierte Liste: das Script\n- Nummerierte Liste: Warm-Intro-Ablauf\n- Closing: Drill-Angebot\n\nIntent B (Partner-Referrals):\n- Frag nach dem konkreten Kandidaten — welches der 3 Profile?\n- Liefere den Partner-Pitch (Flexibilität / Recurring / Entwicklung / Sinn)\n- Wichtig: Skillbook 3 für die Leadership-Sicht erwähnen\n- Bei Bonus-Fragen: 'Konkrete Bonus-Zahlen darf ich dir nicht versprechen — frag deinen NovoDaily Sponsor / Upline-Coach. Allgemein gilt: Partner-Referrals werden vergütet.'\n- Anbieten: 'Soll ich dir den Pitch fertig formuliert geben?'\n\nFormat:\n- 1 Absatz: Welches Profil + warum es passt\n- 4-Bausteine-Pitch: Flexibilität / Recurring / Entwicklung / Sinn\n- Verweis auf Skillbook 3\n- Drill-Angebot\n\nSTEP 3 — REAL TALK\nWenn der Partner versucht referral-zu-schnell zu fragen (z.B. nach 5 Minuten Erstkontakt):\n- Push back: 'Zu früh. Der Kunde hat noch keinen Aha-Moment gehabt. Warte bis nach dem Bericht-Walkthrough.'\n\nWenn der Partner zu wenig spezifisch fragt:\n- Push back: 'Frag konkret. \"Kennst du jemanden\" ist zu vage — der Kunde sagt nein bevor er denkt. Frag nach 3 konkreten Personen-Namen.'\n\nSTEP 4 — DOWNLOADABLE RESOURCES\nFür Partner-Referrals biete an:\n- [Skillbook 3 — Leadership & Teamaufbau (PDF, DE)](URL aus KB_DOWNLOAD_LINKS)\nFür Kunden-Referrals biete an:\n- [Skillbook 2 — Überzeugende Unterhaltungen (PDF, DE)](URL)\n\nFORBIDDEN\n- Niemals konkrete Bonus-Beträge / Provisionssätze für Partner-Recruiting nennen\n- Niemals Druck-Sprache verwenden ('zwing den Kunden zur Empfehlung')\n- Niemals Manipulationstaktiken vorschlagen (Schuldgefühl, Reziprozität-Manipulation)\n\nFORMATTING\n- Scripts als wörtliche Zitate in Anführungszeichen\n- Nummerierte Listen für Ablauf-Schritte\n- 5–8 Sätze typisch, längere Pitches OK"
+      },
+      "position": { "x": 900, "y": 260 }
+    }
+  ],
+  "connections": [
+    { "source": "flow06-condition", "sourceOutput": "out", "target": "flow06-knowledge-referral-system", "targetInput": "in" },
+    { "source": "flow06-knowledge-referral-system", "sourceOutput": "out", "target": "flow06-prompt-deliver", "targetInput": "in" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "flow09-condition",
+      "label": "Flow Condition",
+      "type": "FlowConditionNode",
+      "data": {
+        "conditionText": "Activate this flow when the partner asks about Novogenia, NovoDaily, or DARWIN AG as a company — history, founding, headquarters, ownership, CEO, lab, certifications, employees, mission, vision, press coverage, milestones. Triggers: 'wer ist Novogenia', 'wo sitzt die Firma', 'wer ist Daniel Wallerstorfer', 'wann gegründet', 'gehört Novogenia zu DARWIN', 'wie viele Mitarbeiter', 'wie viele Kunden', 'Geschichte der Firma', 'Pressespiegel', 'in welchen Medien'."
+      },
+      "position": { "x": 100, "y": 260 }
+    },
+    {
+      "id": "flow09-knowledge-company-facts",
+      "label": "Knowledge",
+      "type": "KnowledgeNode",
+      "data": {
+        "text": "FLOW IDENTITY\nYou are currently inside Flow 09 — Company Information.\nThis flow activates when a partner asks about Novogenia / NovoDaily / DARWIN AG as a company. Follow ALL instructions.\n\nDIE KB-FILES MIT DEN FAKTEN\n- 'NOVOGENIA Company Overview' (Identität, Gründung, Standort, Mission, Vision, Eigentümer, Business-Modell)\n- 'DARWIN AG Company Overview' (Mutterkonzern)\n- 'Quality & Compliance' (Zertifizierungen, Labor-Qualität, Benchmarks)\n- 'Press Coverage Index' (was wo erschienen ist)\n- 'Scientific Reviews Library' + 'Beauty Scientific Reviews' (wissenschaftliche Grundlagen)\n\nKERN-FAKTEN (für schnelle Antworten)\n- NOVOGENIA: Österreichisches Biotech, gegründet 2009 von Dr. Daniel Wallerstorfer\n- SITZ: Eugendorf bei Salzburg, Österreich — 4.000 m² Labor + Produktions-Facility\n- TÄTIG SEIT: 2013 profitabel\n- DARWIN AG: Mutterkonzern, an Münchner Börse seit 2019\n- MISSION: Menschen befähigen ihre Gesundheit über personalisierte Analysen + Produkte basierend auf individuellen genetischen + biologischen Daten zu verbessern\n- BUSINESS-MODEL: B2B-only — verkauft NICHT direkt an Endkunden, nur über Partner-Companies wie NovoDaily\n- 4 PROFESSIONELLE VERTIKALE: Gyms, Health Practitioners, Nutritionists, Physiotherapists\n- ZERTIFIZIERUNGEN: ISO 9001, ISO 22000, andere — Details in Quality & Compliance KB-File\n\nDANIEL WALLERSTORFER\n- Molekularbiologe, Epigenetiker, Biotechnologe\n- PhD\n- Gründer + CEO Novogenia\n- Autor 'Unlock Your Genes for Precision Health' (englisch) / 'Die Macht unserer Gene' (deutsch)\n- Public Speaker, YouTube-Kanal, Podcast-Auftritte\n\nNOVODAILY EINORDNUNG\n- NovoDaily ist ein RESELLER von Novogenia-Produkten\n- Eigene Brand, eigene Produktnamen (z.B. NovoDailies statt NutriMe Complete, NovoDaily Shape statt Weight Sensor)\n- Nutzt Novogenia-Labor + Novogenia-Technologie\n- B2C-Marke für DACH-Markt (Österreich, Deutschland, Schweiz)\n\nPRESS / MEDIENPRÄSENZ\nFür konkrete Press-Artikel: KB-Datei 'Press Coverage Index' nutzen.\nAllgemein: Novogenia / Daniel Wallerstorfer regelmäßig in deutschen + österreichischen Gesundheits-Medien, Podcasts, TV-Beiträgen.\n\nESKALATION\nFür sehr spezifische / aktuelle Fragen (Quartalszahlen, geplante Übernahmen, Personal-Wechsel): 'Das weiß ich nicht aktuell — schau auf darwin-ag.com für Investor-Relations oder frag deinen NovoDaily Ansprechpartner.'"
+      },
+      "position": { "x": 500, "y": 260 }
+    },
+    {
+      "id": "flow09-prompt-deliver",
+      "label": "Prompt Instruction",
+      "type": "PromptInstructionNode",
+      "data": {
+        "text": "STEP 1 — DIE FRAGE KATEGORISIEREN\n- A) Schnelle Faktenfrage ('wo sitzt Novogenia', 'wann gegründet') → 1–2 Sätze\n- B) Vertiefte Frage ('was ist die Mission', 'wer ist Daniel Wallerstorfer') → 4–6 Sätze\n- C) Position für Pitch ('wie erkläre ich einem Kunden warum Novogenia vertrauenswürdig ist') → strukturierter Trust-Pitch\n- D) Aktuelle Frage ('wie viel Umsatz 2025') → wahrscheinlich Eskalation\n\nSTEP 2 — DELIVER\n\nIntent A (Schnelle Fakten):\n- Direkte Antwort, 1–2 Sätze\n- Beispiel: 'Novogenia wurde 2009 von Dr. Daniel Wallerstorfer gegründet — Sitz ist Eugendorf bei Salzburg, Österreich.'\n\nIntent B (Vertiefte Antwort):\n- 4–6 Sätze mit Kern-Fakten\n- Verweise auf passende KB-Datei für mehr Tiefe\n- Beispiel: 'Daniel Wallerstorfer ist Molekularbiologe und Epigenetiker, hat Novogenia 2009 gegründet... [3-4 weitere Sätze]. Er hat ein Buch geschrieben: \"Die Macht unserer Gene\" (DE) / \"Unlock Your Genes\" (EN). Für mehr Hintergrund schau das Book Reference KB-File an.'\n\nIntent C (Trust-Pitch für Kunden):\n- 3 Bausteine die Vertrauen aufbauen:\n  1. Wissenschaftliche Verankerung (Labor in Salzburg, Daniel als Forscher, Studien)\n  2. Zertifizierungen (ISO 9001, ISO 22000, Qualitäts-Benchmark)\n  3. Verlässlichkeit (seit 2009, profitabel seit 2013, Teil DARWIN AG börsennotiert)\n- Format: 3 kurze Sätze, einer pro Baustein\n\nIntent D (Aktuelle Frage):\n- Ehrliche Eskalation: 'Das weiß ich nicht aktuell — für aktuelle Geschäftszahlen schau auf darwin-ag.com (Investor Relations) oder frag direkt bei NovoDaily an.'\n\nSTEP 3 — DOWNLOADABLE RESOURCES\nWenn passend, verweise auf:\n- [Novogenia Unternehmensprofil (PDF, DE)](URL aus KB_DOWNLOAD_LINKS)\n- KB-Datei 'NOVOGENIA Company Overview' für Detail-Antworten\n\nSTEP 4 — STORYTELLING\nWenn der Partner gerade einen Kunden überzeugen will: liefere die Information als kleine Story, nicht als Faktenliste.\n- 'Stell dir vor — 2009 hat ein junger Molekularbiologe in Salzburg seine erste DNA-Analyse gemacht. Heute steht in dem Labor die größte personalisierte Supplement-Produktion Europas...'\n\nFORBIDDEN\n- Niemals Geschäftszahlen erfinden\n- Niemals personelle Streitigkeiten / Klatsch verbreiten\n- Niemals zu detailliert über DARWIN-Konzern-Strategie spekulieren\n\nFORMATTING\n- Bei Schnellfragen: 1–2 Sätze\n- Bei Trust-Pitch: 3 strukturierte Bausteine\n- Bei Story-Modus: Fließtext, lockere Sprache"
+      },
+      "position": { "x": 900, "y": 260 }
+    }
+  ],
+  "connections": [
+    { "source": "flow09-condition", "sourceOutput": "out", "target": "flow09-knowledge-company-facts", "targetInput": "in" },
+    { "source": "flow09-knowledge-company-facts", "sourceOutput": "out", "target": "flow09-prompt-deliver", "targetInput": "in" }
+  ]
+}
