@@ -28,6 +28,36 @@
 
 ---
 
+## Bot Configuration Flags
+
+These flags override default bot behavior for this tenant. Full schema spec: see `ARCHITECTURE/Reseller_Config_Schema.md`.
+
+| Flag | Value | Begründung / Notiz |
+|---|---|---|
+| allow_science_beyond_products | true | NovoDaily will breite Wissens-Autorität — Bot darf Science zu nicht-verfügbaren Produkten erklären, redirected aber auf verfügbare. |
+| brand_mode | reseller_led | NovoDaily ist Eigenmarke, nicht Novogenia-Vermittler. Labor = "unser zertifiziertes Partnerlabor". |
+| founder_visibility | subtle | Wallerstorfer wird im Wissenschafts-Kontext natürlich erwähnt, aber kein aktiver Social-Push. |
+| tone_style | du | Per NovoDaily-Vorgabe, Du-Form überall im Deutschen. |
+| language_mode | adaptive | DACH-Markt, Mehrsprachigkeit erwünscht — Bot wechselt mit der Nutzer-Sprache. |
+| video_recommendations_enabled | true | Video-Library wird genutzt. Sprache: DE-zuerst, EN-Fallback. |
+| commercial_disclosure_mode | subtle | Darwin-AG / Novogenia-AG-Erwähnung erlaubt im passenden Kontext, niemals als Investment-Empfehlung. |
+| primary_language | de-DE | Hauptsprache Deutsch, Sekundär Englisch. |
+| Flow 01 — Product Q&A | true | aktiv |
+| Flow 02 — Sales Training | true | aktiv |
+| Flow 03 — Legal Questions | true | aktiv |
+| Flow 04 — Ad Copy Review | true | aktiv |
+| Flow 05 — Reseller Onboarding | true | aktiv |
+| Flow 06 — Reseller Referrals | true | aktiv |
+| Flow 07 — NovoPilot Platform Help | true | aktiv |
+| Flow 08 — Academy Certification | true | aktiv |
+| Flow 09 — Company Information | true | aktiv |
+| Flow 10 — Marketing Materials | true | aktiv |
+| Flow 11 — Custom Supplement Creation | true | aktiv |
+
+**Wie der Bot diese Flags nutzt:** Vor jeder Antwort konsultiert der Bot diese Tabelle. Default-Verhalten aus dem Master Prompt wird durch die hier definierten Werte überschrieben.
+
+---
+
 ## Units of Measurement
 
 | Setting | Value | Options |
