@@ -1,0 +1,200 @@
+<!--
+TRIGGER: Video, Schulung, Academy, NOVO Academy, YouTube, anschauen, ansehen, Erklärvideo, mehr dazu, vertiefen, genauer erklären
+STAND: 2026-08-06 — Quelle: Repo Novogenia-AG/novo-academy, src/data*.js
+-->
+
+# NOVO Academy — Video-Index
+
+## Wozu dieser Index dient
+
+Zu vielen Themen gibt es ein Schulungsvideo der NOVO Academy. Wenn ein Kunde ein Thema vertiefen will, kann zusätzlich zur Antwort das passende Video angeboten werden. Jeder Eintrag unten nennt die YouTube-ID, die Sprache und worum es im Video geht.
+
+## Sprachregel
+
+Videos gibt es auf Deutsch und Englisch. Passt die Chatsprache zu einer davon und existiert dort ein Video zum Thema, wird dieses genommen. Sonst das englische, mit einem kurzen Hinweis, dass es nur auf Englisch vorliegt. Gibt es zu einem Thema gar kein Video, wird keines erfunden und keine ID geraten.
+
+## Deutschsprachige Videos
+
+- `gwmVcvbaNgE` (de) — Biologisches Alter — Wissenschaftliche Basis. Wie das biologische Alter genetisch bestimmt und durch Lebensstil beeinflusst wird.
+  - Telomere und Zellalterung — Grundlagen
+  - Chronologisches vs. biologisches Alter
+  - Genetische Faktoren der Alterung (TERT, BICD1 & Co.)
+  - Anti-Aging Strategien mit messbarer Wirkung
+  - Was ist der Unterschied zwischen chronologischem und biologischem Alter?
+  - Wie werden Telomere gemessen und was sagen sie aus?
+- `kk5aXYY1sWQ` (de) — Alterungsprozess (aus dem Kurs: Biologisches Alter)
+- `eOqrJicdJZM` (de) — Burnout und Stress — Wissenschaftliche Basis. Welche Gene die individuelle Stressantwort und das Burnout-Risiko steuern.
+  - Stress-Gene (COMT, BDNF, 5-HTT) und ihre Wirkung
+  - Warum Menschen Stress unterschiedlich verarbeiten
+  - Genetische Risikofaktoren für Burnout
+  - Personalisierte Strategien zur Stress-Resilienz
+  - Wie unterschiedlich verarbeiten Menschen Stress?
+  - Welche Gene erhöhen das Burnout-Risiko?
+- `eU5n2iseSdA` (de) — Burnout — Individuelle Umgang mit Stress (aus dem Kurs: Burnout und Stress)
+- `2QmG2UWqR1Y` (de) — Die Gen-Diät — Wissenschaftliche Basis. Wie Gene das Körpergewicht steuern — die wissenschaftlichen Grundlagen verständlich aufbereitet.
+  - Welche Gene den Energiestoffwechsel und die Fettverwertung steuern
+  - Wie genetische Veranlagung mit Lebensstil zusammenwirkt
+  - Was die Forschung über erblich bedingtes Übergewicht wirklich sagt
+  - Wie du genetische Informationen seriös in der Kundenberatung einsetzt
+  - Kalorienzählen — wo liegt das Problem?
+  - Warum können manche Menschen essen, was sie wollen, ohne zuzunehmen?
+- `rqae12uqZkE` (de) — Teil 1 — Vorstellung (aus dem Kurs: Die Gen-Diät)
+- `J5mjGUUPauA` (de) — Teil 10 — Ernährung (aus dem Kurs: Die Gen-Diät)
+- `65KFDOTkuh4` (de) — Teil 11 — Die Lebensmittelliste mit dem Artikelsystem (aus dem Kurs: Die Gen-Diät)
+- `Bfpaz1wgwAA` (de) — Teil 12 — Rezeptbuch, Tagesmenüs (aus dem Kurs: Die Gen-Diät)
+- `ZxHifFgNEMQ` (de) — Teil 13 — Individuelle Mischung, maximale Wirkung (aus dem Kurs: Die Gen-Diät)
+- `oyswZJ-H3D0` (de) — Teil 14 — Sport. Erstelle deinen Plan (aus dem Kurs: Die Gen-Diät)
+- `fixLktZljhw` (de) — Teil 2 — Ernährungstyp (aus dem Kurs: Die Gen-Diät)
+- `LKntZF-Mf5w` (de) — Teil 3 — Wissenschaft der Gene (aus dem Kurs: Die Gen-Diät)
+- `LSVMmF6tmWA` (de) — Teil 4 — Sport oder Kalorienreduktion (aus dem Kurs: Die Gen-Diät)
+- `C_gAEaJ3Nro` (de) — Teil 5 — Erhaltung deiner Muskelmasse (aus dem Kurs: Die Gen-Diät)
+- `_CLmOVISzew` (de) — Teil 6 — Hunger und Sättigungsgefühl im Griff (aus dem Kurs: Die Gen-Diät)
+- `dNxo7sGc-cY` (de) — Teil 7 — Fettverteilung – wo sich Fett ansammelt (aus dem Kurs: Die Gen-Diät)
+- `MdhoLTk9NxQ` (de) — Teil 8 — Endlich schlank. Und jetzt? (aus dem Kurs: Die Gen-Diät)
+- `Gl6ESeD9fMk` (de) — Teil 9 — Du und deine Ergebnisse im Alltag (aus dem Kurs: Die Gen-Diät)
+- `3AvZMAtALlQ` (de) — Entgiftung — Wissenschaftliche Basis. Wie Gene die individuelle Entgiftungsfähigkeit bestimmen — von Verkohltem über Chemikalien bis Alkohol und Schwermetalle.
+  - Entgiftung von Verbranntem (CYP1A1, NAT2)
+  - Chemikalien-Entgiftung & Glutathion-S-Transferasen (GST)
+  - Antioxidativer Schutz und Selenversorgung
+  - Alkohol- und Acetaldehyd-Abbau (ADH, ALDH2)
+  - Welche Gene steuern die Entgiftung verbrannter Stoffe (Verkohltes, Geräuchertes)?
+  - Wie wirken Glutathion-S-Transferasen bei der Chemikalien-Entgiftung?
+- `zo5L2VwFxuc` (de) — Alkohol und Drogen (aus dem Kurs: Entgiftung)
+- `mHwTrHigqQ8` (de) — Alterungsschutz vor oxidativem Stress (aus dem Kurs: Entgiftung)
+- `99hQc17CnVo` (de) — Ausreichende Selenversorgung (aus dem Kurs: Entgiftung)
+- `uXM2kEWR7LM` (de) — Entgiftung von Chemikalien (aus dem Kurs: Entgiftung)
+- `Rk3QF7UwjQo` (de) — Entgiftung von Verbranntem (aus dem Kurs: Entgiftung)
+- `79MPy6BFqu8` (de) — Gesund ernähren nach den Genen — Wissenschaftliche Basis. Wie Gene die optimale Ernährung jedes Menschen mitbestimmen — wissenschaftlich erklärt.
+  - Genetische Variationen im Nährstoffstoffwechsel
+  - Warum dasselbe Lebensmittel verschieden wirkt
+  - Studienlage zur Nutrigenetik
+  - Praktische Umsetzung in der Beratung
+  - Warum sind manche Lebensmittel für die einen gesund, für die anderen ungesund?
+  - Welche Rolle spielen Gene wie MTHFR, CYP1A2 oder ACE bei der Nährstoffverwertung?
+- `LdQ7zCN9HL4` (de) — Coenzym Q10: das Anti-Aging Molekül (aus dem Kurs: Gesund ernähren nach den Genen)
+- `jk1N2MDyasY` (de) — Eisenaufnahme — die richtige Menge (aus dem Kurs: Gesund ernähren nach den Genen)
+- `yJVPSaCRzK0` (de) — Ernährungspyramide (aus dem Kurs: Gesund ernähren nach den Genen)
+- `aMj4OQWp-iI` (de) — Gene, Laktose und Kalzium (aus dem Kurs: Gesund ernähren nach den Genen)
+- `TT0PxT6Wc0o` (de) — Herz Schutz vor Homocystein (aus dem Kurs: Gesund ernähren nach den Genen)
+- `rwWy2OZb6Cc` (de) — Kochsalz und Blutdruck (aus dem Kurs: Gesund ernähren nach den Genen)
+- `7c7kMeZxEjk` (de) — Lebensmittel nach deinem individuellen Bedarf (aus dem Kurs: Gesund ernähren nach den Genen)
+- `g7kP9S66Wbo` (de) — Regulierung von LDL Cholesterin (aus dem Kurs: Gesund ernähren nach den Genen)
+- `hUFY050zS7k` (de) — Regulierung von Triglyceriden (aus dem Kurs: Gesund ernähren nach den Genen)
+- `9tfrd5NqfHA` (de) — Wirkung von Folsäure (aus dem Kurs: Gesund ernähren nach den Genen)
+- `6qNiJE9BYkc` (de) — Wirkung von Kaffee und Koffein (aus dem Kurs: Gesund ernähren nach den Genen)
+- `iFTT92_LcmE` (de) — Wirkung von Omega 3 auf HDL Cholesterin (aus dem Kurs: Gesund ernähren nach den Genen)
+- `Fzc80j4IpM0` (de) — Wirkung von Vitamin D3 (aus dem Kurs: Gesund ernähren nach den Genen)
+- `5DgFZxCtZd0` (de) — Zusätzliche Gene (aus dem Kurs: Gesund ernähren nach den Genen)
+- `5A5XoWH7XKk` (de) — Gesunde Haut und Aussehen — Wissenschaftliche Basis. Wie Gene Hautalterung, Faltenbildung, UV-Empfindlichkeit und Hautfeuchtigkeit mitbestimmen — wissenschaftlich erklärt.
+  - Genetische Hautalterung & Kollagenabbau (MMP1)
+  - UV-Empfindlichkeit und Pigmentierung (MC1R)
+  - Hautfeuchtigkeit & Barriere-Funktion (FLG)
+  - Antioxidative Schutzsysteme der Haut (SOD, CAT, GPX)
+  - Welche Gene steuern den Kollagenabbau und damit die Faltenbildung?
+  - Wie unterscheidet sich die genetische UV-Empfindlichkeit zwischen Menschen?
+- `WV2pfawe6zI` (de) — Personalisierte Nahrungsergänzung — Wissenschaftliche Basis. Wie genetisch individuelle Mikronährstoff-Bedürfnisse personalisierte Supplementierung möglich machen — wissenschaftlich erklärt.
+  - Genetisch individueller Nährstoffbedarf
+  - Mikrotransporter-Technologie
+  - Slow-Release & getrennte Aufnahme (Calcium/Zink)
+  - Bioverfügbarkeit von Vitaminen und Mineralien
+  - Warum hat jeder Mensch einen anderen Mikronährstoffbedarf?
+  - Wie löst die Mikrotransporter-Technologie das Problem konkurrierender Nährstoffe?
+- `GyIfKaYmLoE` (de) — Sportliche Leistung — Wissenschaftliche Basis. Welche Gene sportliche Leistung, Regeneration und Verletzungsrisiko mitbestimmen.
+  - Schnellkraft- vs. Ausdauer-Gene (ACTN3 & Co.)
+  - Bindegewebs-Gene und Verletzungsrisiko
+  - Genetik der Regeneration
+  - Talent vs. Training — was sagt die Forschung?
+  - Welche genetischen Faktoren beeinflussen sportliche Leistung?
+  - Wer ist genetisch Sprinter, wer Ausdauer-Typ — und warum?
+- `rDQBNTWt82Y` (de) — Bienvenue à NOVO ACADEMY
+- `jHgdDRGy0hA` (de) — Der WEG zum EWIGEN LEBEN?
+- `71EHqtv3NOA` (de) — Einleitung zur NOVO ACADEMY
+- `CFtFwezScLs` (de) — TOUR durch das UNTERNEHMEN
+- `N9aEz_WAe1I` (de) — TOUR through the COMPANY
+- `yADG8aygIOI` (de) — Visite de Novogenia — la technologie derrière les produits personnalisés les plus avancés au monde
+
+## Englischsprachige Videos
+
+- `p02EmbTNRqE` (en) — How genetics determines weight gain, exercise response, and the right diet — explained scientifically.
+  - Why the same calories affect people differently
+  - Carb-sensitive vs. fat-sensitive genotypes
+  - Exercise responders vs. non-responders
+  - Personalized diet strategy from genetics
+  - Why do some people gain weight on carbs, others on fat?
+  - Why does exercise work for some but not others?
+- `pRU2p2Banno` (en) — How genes determine the optimal nutrition for each person — explained scientifically.
+  - Genetic variations in nutrient metabolism
+  - Why the same food affects people differently
+  - Studies on nutrigenetics
+  - Practical implementation in consultation
+  - Why are some foods healthy for some and unhealthy for others?
+  - What role do genes like MTHFR, CYP1A2, or ACE play in nutrient utilization?
+- `cdsMJEPUv5A` (en) — Which genes determine athletic performance, regeneration, and injury risk.
+  - Sprint vs. endurance genes (ACTN3 & Co.)
+  - Connective tissue and injury risk (COL5A1, MMP3)
+  - Inflammation response and regeneration time
+  - Practical implementation in training planning
+  - How much of athletic talent is genetically determined?
+  - Which genes distinguish sprinters from marathon runners?
+- `DbRx4Kjqkes` (en) — How genes determine individual detoxification ability — from burnt foods through chemicals to alcohol and heavy metals.
+  - Detoxification of burnt foods (CYP1A1, NAT2)
+  - Chemical detoxification & Glutathione-S-Transferases (GST)
+  - Antioxidant defense and selenium intake
+  - Alcohol and acetaldehyde breakdown (ADH, ALDH2)
+  - Which genes control detoxification of burnt foods?
+  - How do glutathione-S-transferases work in chemical detoxification?
+- `TIHnA7J6EP4` (en) — How genetic individual micronutrient needs make personalized supplementation possible — explained scientifically.
+  - Genetic individual nutrient needs
+  - Microtransporter technology
+  - Slow-release & separated absorption (Calcium/Zinc)
+  - Bioavailability of vitamins and minerals
+  - Why does every person have different micronutrient needs?
+  - How does microtransporter technology solve competing nutrients?
+- `IgNeWJ6tTng` (en) — How genes co-determine skin aging, wrinkle formation, UV sensitivity, and skin hydration — explained scientifically.
+  - Genetic skin aging & collagen breakdown (MMP1)
+  - UV sensitivity and pigmentation (MC1R)
+  - Skin hydration & barrier function (FLG)
+  - Antioxidant defense systems of the skin (SOD, CAT, GPX)
+  - Which genes control collagen breakdown and thus wrinkle formation?
+  - How does genetic UV sensitivity differ between people?
+- `SgzAZyUIx-0` (en) — How genetic variants influence drug metabolism and tolerance — explained scientifically.
+  - CYP enzymes & drug metabolism
+  - Fast and slow metabolizers
+  - Clinically relevant active substances (antidepressants, analgesics, anticoagulants, …)
+  - Practical relevance in consultation
+  - Why do medications work differently in different people?
+  - Which CYP enzymes are responsible for breaking down the most important active substances?
+- `IPIr-XoKIHM` (en) — Caffeine and Coffee
+- `ofA7l21tMvQ` (en) — Closing — Last Part
+- `iS1W947McFs` (en) — Coenzyme Q10
+- `425Pv9mfFmk` (en) — Concluding Remarks
+- `CxcnY6fnz5s` (en) — Detox — Carcinogens
+- `CyUqDSeZbJI` (en) — Detox — Chemicals and Heavy Metals
+- `-C9O5SrbdZQ` (en) — Folic Acid
+- `q8RNXZE5t5A` (en) — Food List
+- `PA73Rg4iP7k` (en) — Free Radicals (Oxidative Stress)
+- `pYLWY_5frwQ` (en) — Homocysteine
+- `dHuDD3Us238` (en) — Inflammation
+- `mJ5joZYBtmk` (en) — Introduction
+- `6dJMl02X9Tw` (en) — Iron
+- `PTvmWu1Rxrg` (en) — LDL Cholesterol
+- `zMb8ebBNGzA` (en) — Lactose and Calcium
+- `wE834vw4aAs` (en) — Methylation
+- `vIJroun2h-I` (en) — Nutrition Analysis — Introduction
+- `Lfh3oYtMSDA` (en) — Omega 3
+- `Y9lSzTXj72c` (en) — Principle of Food Rating
+- `pzF004M4ErE` (en) — Salt and Blood Pressure
+- `ikDamq8-8yo` (en) — Selenium
+- `mgfbGW-QKC4` (en) — Triglycerides
+- `Fd8renx2EwE` (en) — Understanding the Science Tables
+- `8OyIc_fcdYg` (en) — Vitamin D (Part 1)
+- `g5GKYyH11hc` (en) — Vitamin D (Part 2)
+- `QCgqCo4Qqfk` (en) — Weight Analysis — Exercise Tables
+- `sI73pZ0bPF4` (en) — Weight Analysis — Exercise and Calorie Type
+- `Ky-yFxo7lEs` (en) — Weight Analysis — Fat Distribution
+- `KhwgUetPahI` (en) — Weight Analysis — Food Item System
+- `BJ0sWv3bpVs` (en) — Weight Analysis — Food List
+- `2HgTRooIjaU` (en) — Weight Analysis — Hunger and Satiety
+- `1UFjgQppgMA` (en) — Weight Analysis — Muscle Mass Loss
+- `iDJz6WEHLOw` (en) — Weight Analysis — Nutritional Type
+- `TSoBij5Drn4` (en) — Weight Analysis — Yo-Yo Effect
